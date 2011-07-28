@@ -66,7 +66,7 @@ var formatDecimalPlaces = function (num, places){
 
 formatDecimalPlaces(12.1,2);
 
-// change string to number
+// 5. change string to number
 
 var doStrToNum = function (str){
 
@@ -76,4 +76,10 @@ var doStrToNum = function (str){
 
 var theAnswerToLife = doStrToNum("42");
 console.log("The answer to life the universe and everything is ", theAnswerToLife);
+
+// 6. day between 2 dates
+
+var getDaysBetween = function (date1, date2){
+
+}
 
