@@ -39,4 +39,19 @@ var isValidEmail = function (email){
 		}
 }
 
-console.log(isValidEmail("casmere1235@gmail.com"))
+// Title Case a string
+
+String.prototype.titleCase = function () {
+	var str = "";
+	var wrds = this.split(" ");
+	for(keyvar in wrds)
+	{
+	str += ' ' + wrds[keyvar].substr(0,1).toUpperCase()
+	 + wrds[keyvar].substr(1,wrds[keyvar].length);
+	}
+   return str;
+}
+
+var string = "this is a string";
+string = string.titleCase();
+console.log(string);
