@@ -2,7 +2,7 @@
 // SDI-1
 // Author: Scott C. Shamka
 
-// Check for valid phone number
+// 1. Check for valid phone number
 
 var isValidPhone = function (number){
 	
@@ -21,7 +21,7 @@ var isValidPhone = function (number){
 		}
 }
 
-// Check for valid email address
+// 2. Check for valid email address
 
 var isValidEmail = function (email){
 
@@ -39,7 +39,7 @@ var isValidEmail = function (email){
 		}
 }
 
-// Title Case a string
+// 3. Title Case a string
 
 String.prototype.titleCase = function () {
 	var str = "";
@@ -56,7 +56,7 @@ var string = "this is a string";
 string = string.titleCase();
 console.log(string);
 
-// Format Decimal Places
+// 4. Format Decimal Places
 
 var formatDecimalPlaces = function (num, places){
 	
@@ -65,4 +65,15 @@ var formatDecimalPlaces = function (num, places){
 }
 
 formatDecimalPlaces(12.1,2);
+
+// change string to number
+
+var doStrToNum = function (str){
+
+	var int = parseInt(str);
+	return int;
+}
+
+var theAnswerToLife = doStrToNum("42");
+console.log("The answer to life the universe and everything is ", theAnswerToLife);
 
