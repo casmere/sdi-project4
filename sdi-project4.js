@@ -7,7 +7,9 @@
 var isValidPhone = function (number){
 	
 	var valid = false;
-	var regexObj = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	
+	// check for North American Phone number
+	var regexObj = /^\(?([2-9][0-8][0-9])\)?[-. ]?([2-9][0-9]{2})[-. ]?([0-9]{4})$/;
 	
 		if(regexObj.test(number)){
 			// Valid Number
