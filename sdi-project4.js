@@ -27,9 +27,7 @@ var isValidEmail = function (email){
 
 	var valid = false;
 	
-	var regexObj =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\
-					".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA
-					-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	var regexObj =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		
 		if(regexObj.test(email)){
 			// valid email
@@ -40,3 +38,5 @@ var isValidEmail = function (email){
 			return valid;
 		}
 }
+
+console.log(isValidEmail("casmere1235@gmail.com"))
