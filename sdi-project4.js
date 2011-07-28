@@ -21,4 +21,9 @@ var isValidPhone = function (number){
 		}
 }
 
-console.log(isValidPhone("33689e94577"))
+// Check for valid email address
+
+var isValidEmail = function (email){
+
+
+}
