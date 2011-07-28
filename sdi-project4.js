@@ -55,3 +55,14 @@ String.prototype.titleCase = function () {
 var string = "this is a string";
 string = string.titleCase();
 console.log(string);
+
+// Format Decimal Places
+
+var formatDecimalPlaces = function (num, places){
+	
+	var result = num.toFixed(places);
+	console.log(result);
+}
+
+formatDecimalPlaces(12.1,2);
+
