@@ -24,6 +24,9 @@ var isValidPhone = function (number){
 // Check for valid email address
 
 var isValidEmail = function (email){
-
+	
+	var regexObj =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\
+					".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA
+					-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 }
